@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/web/(assets|css|img|uploads)/
+RewriteCond %{REQUEST_URI} !^/tmp/(assets|css|img|uploads)/
+RewriteCond $0 !=images/favicon.ico
+RewriteRule ^([^/]+/)*favicon\.ico$ /web/images/favicon.ico [L]
+RewriteRule ^.*$ web/index.php [L]

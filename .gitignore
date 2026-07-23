@@ -1,0 +1,31 @@
+# --- Secretos / config por entorno (NO versionar) ---
+/config/db.php
+/config/db.php.hosting-viejo.bak
+
+# --- Runtime de Yii (cache, logs, temporales de mpdf) ---
+/runtime/cache/*
+/runtime/debug/*
+/runtime/logs/*
+/runtime/mpdf/*
+!/runtime/cache/.gitkeep
+!/runtime/debug/.gitkeep
+!/runtime/logs/.gitkeep
+
+# --- Assets publicados por Yii (se regeneran solos) ---
+/web/assets/*
+!/web/assets/.gitkeep
+
+# --- Uploads del portal (los archivos reales viven en el sistema) ---
+/web/uploads/*
+!/web/uploads/.gitkeep
+
+# --- Basura del SO / editor / hosting viejo ---
+.DS_Store
+*.log
+web/error_log
+.ftpquota
+.user.ini
+php.ini
+.htaccess.phpupgrader.*
+
+# NOTA: vendor/ SE VERSIONA a proposito (no hay composer.json para reconstruirlo).

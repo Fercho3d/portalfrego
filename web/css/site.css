@@ -1,0 +1,550 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+
+.full-width{
+    width: 100%;
+}
+
+.actionCol {
+  white-space: nowrap;
+
+}
+
+.actionCol  .btn {
+    float: none;
+    display: inline-block;
+}
+
+.detail-view tbody tr td{
+    width: 50%;
+}
+
+.progress-bar{
+    background-color: #449D44;
+}
+
+.progress{
+    background: #f95f5f;
+}
+
+.progress-bar span{
+    color: #ffffff;
+}
+
+.delivery{
+    float: left;
+    width: 400px !important;
+}
+
+
+.glyphicon-calendar{
+    margin-left: -6px !important;
+    margin-top: 4.5px !important;
+}
+
+.booking-tools{
+     width: 100px;
+}
+
+caption{
+    background: #337ab7;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius:4px 4px 0px 0px; 
+}
+
+.kv-clear{
+    margin-top: 8px;
+    margin-right: 10px;
+    font-weight: bold;
+    color:gray;
+}
+
+.tran-back{
+    margin-bottom: 10px;
+}
+
+.action a{
+   display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #5f5f5f;
+    background-color: #ffffff;
+    border-color: #babcba;
+}
+
+.action{
+    width: 80px;
+}
+
+.tab-pane{
+   
+    padding-bottom: 40px;
+}
+
+.navbar{
+    background: #333333 !important;
+}
+
+.navbar-brand img{
+    width: 90px ;
+    margin-top: -10px;
+}
+
+.well{
+   background: #e4e4e4 !important;
+}
+
+.well span{
+  font-size: 80px;
+}
+
+.breadcrumb{
+   background: #333333 !important;
+}
+
+.breadcrumb a {
+    color: #fff;
+}
+
+.breadcrumb .active{ 
+color:#ED3237;
+} 
+
+
+.modal-content{
+    background: #fff !important;
+    height: 100% !important;
+    float: left;
+}
+
+.modal-header{
+    padding: 0px !important;
+    text-align: center;
+    background: #e4e4e4;
+}
+
+.modal {
+
+}
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+}
+
+.modal-body{
+     overflow: auto;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.table-condensed>thead>tr>th, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>tbody>tr>td, .table-condensed>tfoot>tr>td{
+    padding: 0px 3px 0px 5px;
+    font-size:11px;
+    vertical-align: middle !important;
+}
+
+.bottom-fixed{
+    padding: 12px;
+    background: #e2e2e2;
+    border-top: 1px solid #b9b9b9;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    margin-top: 50px;
+    z-index: 20;
+}
+
+.breadcrumb{
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 51px;
+    border-radius:0px; 
+    z-index: 20;
+}
+
+.tabs-content{
+    
+}
+
+.nav-tabs li{
+    cursor: pointer;
+}
+
+body{
+    padding-top:25px; 
+}
+
+#form{
+      z-index: 1500 !important;
+}
+
+#form .modal-dialog {
+
+  margin-top: 15vh !important;
+  margin-left: 15vw !important;
+  width: 70vw;
+  height: 70vh;
+  margin: 0;
+  padding: 0;
+
+}
+
+#form .modal-dialog .modal-content {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+#form .modal-dialog .modal-content .modal-body{
+
+    height: calc(100% - 50px);
+    overflow: auto;
+
+}
+
+#form .modal-dialog .modal-footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    background-color: #fff;
+
+}
+
+#pdf .modal-dialog {
+  margin-top: 5vh !important;
+  margin-left: 10vw !important;
+  width: 80vw;
+  height: 90vh;
+  margin: 0;
+  padding: 0;
+}
+
+#pdf .modal-dialog .modal-content {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+#pdf .modal-dialog .modal-content .modal-body{
+
+    height: calc(100% - 50px);
+    overflow: auto;
+
+}
+
+#pdf .modal-dialog .modal-footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
+
+.table-condensed>thead>tr>th, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>tbody>tr>td, .table-condensed>tfoot>tr>td{
+    padding: 8px 8px 8px 8px;
+    font-size:14px;
+    vertical-align: center !important;
+   /* border-left: #F1F1F1 solid .5px;*/
+}
+
+.ui-tooltip{
+    padding:8px  !important;
+    position:absolute;
+    z-index:9999 ;
+    max-width:300px !important;
+    font-size: 18px !important;
+    border-radius: 8px !important;
+    font-weight: bold;
+
+}
+
+.primary{
+    background: rgb(0,137,255) !important;
+    color: #fff !important;
+}
+
+.grid_panel_remove{
+    
+    height:0px;
+
+}
+
+
+.table-condensed>thead>tr>th, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>tbody>tr>td, .table-condensed>tfoot>tr>td{
+    padding: 5px;
+    font-size:11px;
+}
+
+#pdf-viz-modal .modal-dialog {
+  margin-top: 15vh !important;
+  margin-left: 15vw !important;
+  width: 70vw;
+  height: 70vh;
+  margin: 0;
+  padding: 0;
+}
+
+#pdf-viz-modal .modal-dialog .modal-content {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+#pdf-viz-modal .modal-dialog .modal-content .modal-body{
+
+    height: calc(100% - 60px);
+    overflow: hidden;
+
+}
+
+#pdf-viz-modal .modal-dialog .modal-footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#request-form  .modal-dialog {
+  margin-top: 10vh !important;
+  margin-left: 10vw !important;
+  width: 80vw;
+  height: 80vh;
+  margin: 0;
+  padding: 0;
+}
+
+#request-form  .modal-dialog .modal-content {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+#request-form  .modal-dialog .modal-content .modal-body{
+
+    height: calc(100% - 50px);
+    overflow: auto;
+
+}
+
+#request-form  .modal-dialog .modal-footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+#kvFileinputModal{
+  z-index: 3000 !important;
+}
+
+#charge-form{
+    z-index: 2000 !important; 
+}
+
+.cbx-disabled  {
+    color: #07a200;
+    background: #fcfcfc;
+    cursor: not-allowed;
+}
+
+ 
+.lock{
+    padding:6px;
+    border-radius: 10px;
+    border:3px solid rgb(18,17,17);
+  }
+  
+  .lock-red{
+    color: white !important;
+    background-color: rgb(187, 0, 0);
+    border:2px solid rgb(78, 0, 0);
+  }
+  
+  .lock-green{
+    color: white;
+    background-color: rgb(2, 138, 126);
+    border:2px solid rgb(0,154,42);
+  }

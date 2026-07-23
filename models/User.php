@@ -159,10 +159,9 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
 
     public function validatePassword($password)
     {
-        
-        $hash = Yii::$app->getSecurity()->generatePasswordHash($password);
-       // return true;
-        return $this->security->validatePassword($password,$hash); 
+        // Valida la clave contra el hash bcrypt guardado (igual que el sistema Frego).
+        // Antes hasheaba la clave tecleada y la comparaba consigo misma => SIEMPRE true (bypass).
+        return $this->security->validatePassword($password, $this->password);
     }
 
     public function generatePasswordResetToken()
@@ -219,8 +218,10 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
                 $this->auth_key = \Yii::$app->security->generateRandomString();
             }
 
-            if(isset($this->password)){ 
-                $this->password = $this->security->generatePasswordHash($this->password);
+            // Solo re-hashea cuando llega una clave nueva en texto (password_field),
+            // nunca sobre $this->password ya hasheado (evita el doble-hash).
+            if(!empty($this->password_field)){
+                $this->password = $this->security->generatePasswordHash($this->password_field);
             }
             
             return true;

@@ -13,8 +13,8 @@ if ($isLocal) {
     $sysWebfolder = '/opt/homebrew/var/www/frego';
     $sysUrl       = 'http://frego.dev.loc';
 } else {
-    // Produccion (AWS). Ajustar en el servidor si cambia la ruta/URL del sistema.
-    $sysWebfolder = '/opt/bitnami/apache/htdocs/frego';
+    // Produccion (AWS, /var/www/html). El sistema Frego vive en html/frego.
+    $sysWebfolder = '/var/www/html/frego';
     $sysUrl       = 'http://52.12.171.198';
 }
 
